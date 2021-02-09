@@ -1,29 +1,22 @@
 import { useState, useEffect } from 'react'
+// import './index.css';
 import './App.css';
 
-// function Button(props) {
-//   return <button> number is {props.number}</button>
-// }
+
 
 function App(){
 
-  // useEffect(() => {
-
-  // })
-
   const [count, setCount] = useState(0)
-  const [wLike,setLike] = useState('Like')
+  const [wLike,setLike] = useState('likes')
+   
+  useEffect(() => {
+      count == 1 ? setLike('like') : setLike('likes')
+  })
 
-  function countClick(){
-    if (count > 0) {
-      setLike('Likes')
-  }
-  setCount(count+1)
 
-}
   return (
     <div>
-      <button onClick={countClick} className='like'>{count} {wLike}</button>
+      <button onClick={() => setCount(count + 1)} className="like"> {count} {wLike}</button>
     </div>
   );
 }
