@@ -26,25 +26,21 @@ box-sizing: border-box;
   border-radius: 5px;
   height: 50px;
   width: 125px;
-  margin: 200px;
+  margin-top: 200px;
+  margin-left: 600px;
   background: #2788D6;
   color: #ffffff;
   font-family: sans-serif;
   font-size: 20px;
   cursor: pointer;
 }
-.like:hover {
-  cursor: pointer;
-}
 
 .like:focus {
   outline: none;
-} 
+}  
 
 
-.like:active { 
+ .like:active { 
   transform: scale(0.98); 
-  /* Scaling button to 0.98 to its original size */ 
-  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
-  /* Lowering the shadow */ 
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);  
 } 
