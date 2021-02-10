@@ -7,11 +7,11 @@ function App(){
 
   const [count, setCount] = useState(0)
   const [wLike,setLike] = useState('likes')
-  const handleClick = () => setCount( count + 1)
+  const handleClick = () => setCount(count + 1)
   
   useEffect(() => {
       count == 1 ? setLike('like') : setLike('likes')
-  },[count])
+  })
 
   return (
     <div>
